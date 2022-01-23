@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fa650845c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+ /* HEADER part */
+ 
+    </style>
+</head>
+<body>
+    <!-- Header part -->
+    <div id="container">
+        <div id="headercont">
+        <div id="Header">
+            <div>
+                <input id="searchbar" type="text" placeholder="SearcHere..." style="padding-right:78px;border:transparent">
+                <i  onclick="searchme()"style="color:white;background-color: rgb(54, 53, 53);width:30px;height: 30px;text-align: center;border-radius: 2px;" class="fas fa-search"></i>
+            </div>
+            <div id="Logo">
+                <img height="80%" src="data:image/png;base64,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" alt="uboric logo" />
+            </div>
+            <div id="CartList">
+                <a href="login!.html"><i class="fas fa-user-plus fa-2x"></i></a>
+                <a href="cartpage.html"><i class="fas fa-cart-plus fa-2x"></i></a>
+
+            </div>
+        </div>
+        <div id="navbar">
+            <div>Home</div>
+            <div>Categories<i class="fas fa-caret-down" style="padding: 0px 10px;"></i></div>
+            <div>Customer/Guest Login</div>
+            <div>Merchant/Bulk Order</div>
+            <div>Become A Seller</div>
+        </div>
+    </div>
+
+
+        <!-- bodypart -->
+
+
+
+        <div id="mainpicture">
+            <img width="100%" height="100%" src="https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Random images"/>
+        </div>
+        <div id="submain">
+            <div class="iconimg"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-p015vson434en94w0y2ia9dlj15sq3b1igf5ebhx8w.png" alt="tools"/>
+            </div>
+            <div style="color: royalblue;"><h1>KITCHEN WARE</h1></div>
+            <div class="iconimg"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/kitchen-ware-heading-2-e1608267087979-p8u6s347hhczu1tx5anpg3669ndfy6223vp4gyx47k.png" alt="tools"/></div>
+
+        </div>
+        <div id="multipleimages">
+            <div class="zoomhover"><a href="KitchenPage.html"><img width="100%" height="100%"src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools-768x602.jpg" alt="" /></a></div>
+            <div class="zoomhover"><a href="KitchenPage.html"><img width="100%" height="100%"src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers-768x602.jpg" alt="" /></a></div>
+            <div class="zoomhover"><a href="KitchenPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg" alt="" /></a></div>
+        </div>
+        <div id="centresupport">
+          <img src="https://www.uboric.com/wp-content/uploads/2020/08/Uboric-1.jpg" alt=""/>
+        </div>
+        <div id="submain1">
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-p0160itfh3lb0o9rfhlzbkg11rv8fb2ghui19ehnyo.png" alt="tools"/>
+            </div>
+            <div style="color: royalblue;width:200px;text-align: center;margin:0px 25px;"><h1>OTHER CATEGORIES</h1></div>
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-2-e1608267154124-p8u6s7tefnjfg3n3duouajzh8kqa0nkpsiyjvcq5cg.png" alt="tools"/></div>
+
+        </div>
+        <div id="submain2">
+            <div class="a"><a href="ElectronicsPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2021/12/banner1-1-1.jpg" alt=""/></a></div>
+            <div class="b"><a href="ElectronicsPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2021/12/banner2-1.jpg" alt=""/></a></div>
+            <div class="c"><a href="ElectronicsPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2021/02/Headphone.jpg" alt=""/></a></div>
+            <div class="d"><a href="MensclothesPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2021/12/banner3-1.jpg" alt=""/></a></div>
+            <div class="e"><a href="WomenclothesPage.html"><img width="100%" height="100%" src="https://www.uboric.com/wp-content/uploads/2021/12/banner4-1.jpg" alt=""/></a></div>
+
+        </div>
+        <div id="submain3">
+            <div class="A"><a href="WomenclothesPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Socks-400x601.jpg" alt=""/></a></div>
+            <div class="B"><a href="MensclothesPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Personal-Care-400x601.jpg" alt=""/></a></div>
+            <div class="C"><a href="WomenclothesPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Braclate-400x601.jpg" alt=""/></a></div>
+            <div class="D"><a href="MensclothesPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Grocery-400x601.jpg" alt=""/></a></div>
+            <div class="E"><a href="WomenclothesPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Health-Care-400x601.jpg" alt=""/></a></div>
+        </div>
+        <div id="submain4">
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-p8u6see9rhsfpddjbfj8a0bpe9tuijau5fiy8age4w.png" alt="tools"/>
+            </div>
+            <div style="color: royalblue;margin:20px;"><h1>SPICES</h1></div>
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-p0160oggm3t0yc1kik1qqj0sm33fphouimey529axc.png" alt="tools"/></div>
+
+        </div>
+        <div id="submain5">
+            <div class="A"><a href="KitchenPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-1-400x601.jpg" alt=""/></a></div>
+            <div class="B"><a href="KitchenPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-2-400x601.jpg" alt=""/></a></div>
+            <div class="C"><a href="KitchenPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-3-400x601.jpg" alt=""/></a></div>
+            <div class="D"><a href="KitchenPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-5-400x601.jpg" alt=""/></a></div>
+            <div class="E"><a href="KitchenPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-4-400x601.jpg" alt=""/></a></div>
+        </div>
+        <div id="submain6">
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-oyavpz7j82ihpw9re83s74cokl0k5z5t6ch9j8m1lc.png" alt="tools"/>
+            </div>
+            <div style="color: royalblue;margin:20px;"><h1>FOOTWEAR</h1></div>
+            <div class="iconimg1"><img src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-left-e1605175515419-oyavqkttl9c34xecvzg7agwa8g2030jmxbhfklpzm8.png" alt="tools"/></div>
+
+        </div>
+        <div id="submain7">
+            <a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg" alt=""/></a>
+        </div>
+        <div id="submain8">
+            <div class="A"><a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1-400x601.jpg" alt=""/></a></div>
+            <div class="B"><a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3-400x601.jpg" alt=""/></a></div>
+            <div class="C"><a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2-400x601.jpg" alt=""/></a></div>
+            <div class="D"><a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-400x601.jpg"   alt=""/></a></div>
+            <div class="E"><a href="FootwearPage.html"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5-400x601.jpg" alt=""/></a></div>
+
+        </div>
+        <div id="subtext">
+            <h1>The Ultimate Domestic Online Shopping Experience Platform in India</h1>
+            <p>Online shopping with Uboric is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep. Uboric offers you the chance to choose top branded products sitting in the comfort of your homes and just clicking on your requirements to get it delivered at your doorstep. Your search for the latest trending variety of unique products ends right here. A wide range of international products from global brands are available at your fingertips. We provide you with a world-class online shopping experience, along with superior service, to suit all your specific requirements. Our products are very reasonably priced and are not easily available elsewhere. Our high-end technology-based systems, combined with a human approach, ensure that you have an amazing and blissful online shopping experience with us. Our emphasis on customer delight drives every activity we undertake to provide you an ultimate, hassle-free and pleasant shopping experience. Our diverse categories of products comprise of fashion & jewellery, mobiles and tablets, home and furniture, electronics, health care and supplements, sports and fitness, beauty and perfumes. We offer almost every variety of product that your heart desires. Just Go Ahead and Explore the magical world of online shopping with Uboric! 24×7 Customer Care: For all your queries and concerns regarding your shopping orders.</p>
+            <h1>Benefits of shopping on Uboric :</h1>
+            <div id="flex">
+                <div><i class="fas fa-check" style="color:#1e516c;margin-right:20px;"></i>User-Friendly</div>
+                <div><i class="fas fa-check" style="color:#1e516c;margin-right:20px;"></i>Safe&Secure Shopping</div>
+                <div><i class="fas fa-check" style="color:#1e516c;margin-right:20px;"></i>Check Out Closely</div>
+                <div><i class="fas fa-check" style="color:#1e516c;margin-right:20px;"></i>Multiple Payment Options:</div>
+                <div><i class="fas fa-check" style="color:#1e516c;margin-right:20px;"></i>Order History:</div>
+            </div>
+        </div>
+
+
+        <!-- FooterPart -->
+
+        
+    <div id="Feedback">
+        <div class="feed">What Our Customer Says </div>
+        <div class="feedbacks">
+            <div>
+                <p>Auspicious range of footwares.Premium Branded Goods.good Service and Delivery Products.</p>
+                <div>Tushar panday</div>
+                <div>-customer</div>
+            </div>
+            <div>
+                <p>Auspicious range of footwares.Premium Branded Goods.good Service and Delivery Products.</p>
+                <div>Tushar panday</div>
+                <div>-customer</div>
+            </div>
+            <div>
+                <p>Auspicious range of footwares.Premium Branded Goods.good Service and Delivery Products.</p>
+                <div>Tushar panday</div>
+                <div>-customer</div>
+            </div>
+            <div>
+                <p>Auspicious range of footwares.Premium Branded Goods.good Service and Delivery Products.</p>
+                <div>Tushar panday</div>
+                <div>-customer</div>
+            </div>
+            <div>
+                <p>Auspicious range of footwares.Premium Branded Goods.good Service and Delivery Products.</p>
+                <div>Tushar panday</div>
+                <div>-customer</div>
+            </div>
+        </div>
+        <button id="review" type="submit">Add Your Review</button>
+    </div>
+    <div id="Footer">
+        <div id="googleicon"><img width="100%" src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" alt=""/></div>
+        <div class="footerflex">
+            <div>About</div>
+            <div>Contact</div>
+            <div>Shipping & Returns</div>
+            <div>My Account</div>
+            <div>Privacy Policy</div>
+            <div>Become A Seller</div>
+            <div>Terms & Conditions</div>
+        </div>
+        <div>2019 - 2021 UBORIC.ALL RIGHTS RESERVED.</div>
+        <div class="footerflex2">
+            <div class="boxes"><i class="fab fa-facebook-f fa-3x"></i></div>
+            <div class="boxes"><i class="fab fa-instagram fa-3x" ></i></div>
+        </div>
+
+    </div>
+    </div>
+
+    
+</body>
+</html> 
+<script>
+
+</script>

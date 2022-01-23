@@ -1,0 +1,207 @@
+ /* Headerpart */
+ #headercont{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+        #Header{
+            display: flex;
+            width: 100%;           
+            height: 150px;
+            justify-content:space-between;
+            /* border:2px solid black; */
+            margin:-5px auto;
+        }
+        #Header>div:nth-child(1){
+            margin-top:40px;
+            margin-left:10px;
+            display: flex;
+            /* width: 25%; */
+            height: 30px;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px ;
+        }
+        /* #Logo{
+            border: 1px solid red;
+        } */
+        #CartList{
+            display:flex;
+            margin-top: 40px;
+            width: 20%;
+            justify-content: space-evenly;
+            /* border: 1px solid aqua; */
+        }
+    #CartList>a{
+        text-decoration: none;
+        color: black;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid blue; */
+    }
+    #navbar>div{
+        margin: 1px;
+        padding:10px;
+        font-weight: bold;
+        /* border: 1px solid green; */
+    }
+    #navbar>div:hover{
+        background-color: black;
+        color: white;
+        border: transparent;
+    }
+
+
+        /* bodypart */
+
+
+    #productmain4{
+        margin: 20px 0px;
+        display: flex;
+
+    }
+    #productmain4>div:nth-child(1){
+        width: 20%;
+        border: 1px solid red;
+    }
+    #category{
+        width: 100%;
+        border: 1px solid black;
+    }
+    #productcont4{
+        width: 80%;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          
+        }
+        #productcont4>div{
+            text-align: center;
+            background-color:white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #productcont4>img{
+            width: 100%;
+            height: 70%;
+            border: 1px solid red;
+        }
+        /* #flex {
+          display: flex;
+          background-color: tomato;
+          justify-content: space-around;
+          
+        
+        } */
+        /* #flex > p:nth-child(2) {
+          text-decoration:line-through;
+          
+        } */
+        button{
+            margin-bottom:10px;
+            background-color:aqua;
+            border-radius:5px;
+
+        }
+        button:hover{
+            background-color: yellow;
+        }
+
+        /* Footerpart */
+
+        #Feedback{
+        width: 100%;
+        height: 450px;
+        text-align: center;
+        background-color: #83751a;
+    }
+    .feed{
+        width: 50%;
+        margin:20px auto;
+        padding: 25px;
+        color: white;
+        font-size:30px;
+        text-align: center;
+    }
+    .feedbacks{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        overflow-x: auto;
+        height: 250px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+    .feedbacks>div{
+        width: 20%;
+        color: white;
+        margin: 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+
+    }
+    #review{
+        background-color:#ffce61;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    #review:hover{
+        cursor: pointer;
+        background-color: white;
+        border-color: tomato;
+
+    }
+    #Footer{
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        border:1px solid transparent;
+    }
+    #googleicon{
+
+        width: 15%;
+        margin:20px auto;
+        border: 1px solid transparent;
+    }
+    .footerflex{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .footerflex>div{
+        font-weight: bolder;
+        margin: 10px;
+        padding: 0px 20px;
+        cursor:pointer;
+    }
+    
+    .footerflex2{
+        display: flex;
+        margin: 0 20px;
+        justify-content: center;
+    }
+    .boxes{
+        text-align: center;
+        margin: 10px;
+        padding:10px;
+        width:50px;
+        height: 50px;
+        border-radius:50%;
+        background-color: #ffce61;
+    }
+
+
+        @media only screen and (min-width:0px) and (max-width:326px){
+          #container{
+            grid-template-columns: 1fr;
+            grid-gap:20px;
+          }
+        }
+        @media only screen and (min-width:327px) and (max-width:768px){
+          #container{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:20px;
+          }
+        }

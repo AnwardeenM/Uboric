@@ -1,0 +1,242 @@
+  /* Headerpart */
+  #headercont{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+        #Header{
+            display: flex;
+            width: 100%;           
+            height: 150px;
+            justify-content:space-between;
+            /* border:2px solid black; */
+            margin:-5px auto;
+        }
+        #Header>div:nth-child(1){
+            margin-top:40px;
+            margin-left:10px;
+            display: flex;
+            /* width: 25%; */
+            height: 30px;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px ;
+        }
+        /* #Logo{
+            border: 1px solid red;
+        } */
+        #CartList{
+            display:flex;
+            margin-top: 40px;
+            width: 20%;
+            justify-content: space-evenly;
+            /* border: 1px solid aqua; */
+        }
+    #CartList>a{
+        text-decoration: none;
+        color: black;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid blue; */
+    }
+    #navbar>div{
+        margin: 1px;
+        padding:10px;
+        font-weight: bold;
+        /* border: 1px solid green; */
+    }
+    #navbar>div:hover{
+        background-color: black;
+        color: white;
+        border: transparent;
+    }
+
+
+        /* bodypart */
+        /* <login part css> */
+        .headerdiv{
+            font-family:Lato;
+            height: 100px;
+            text-align: center;
+            /* border: 1px solid red; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .headerdiv>h1{
+            color: #34516c;
+        }
+        .headerdiv>h5,h2{
+            color: #222222;
+        }
+        #minbox{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #cont{
+            width: 40%;
+            /* text-align: center; */
+            margin: 20px;
+            /* border: 1px solid aqua; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+        #cont2{
+            font-size: 20px;
+            width: 40%;
+            margin: 20px;
+            /* border: 1px solid green; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+        #btn2{
+            width: 40%;
+            text-align: left;
+            font-size:20px ;
+            background-color:#4f71e8;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #Email{
+            width:80%;
+            height: 50px;
+            font-size: 20px;
+            /* border:1px solid orange; */
+            border-radius: 5px;
+            border:none;
+        }
+        .Email{
+            width:80%;
+            height: 50px;
+            font-size: 20px;
+            /* border:1px solid orange; */
+            border-radius: 5px;
+            border:none;
+        }
+       
+        #password{
+            width:80%;
+            height: 50px;
+            font-size: 20px;
+            /* border:1px solid orange; */
+            border-radius: 5px;
+            border: none;
+            
+        }
+        #btn{
+            margin-bottom: 25px;
+            margin-left: 50px;
+            background-color:#ffce61;
+            padding: 15px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: white;
+        }
+        #btn3{
+            margin-bottom: 25px;
+            margin-left: 25px;
+            background-color:#ffce61;
+            padding: 15px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+        #btn3:hover{
+            background-color: white;
+        }
+        #Lost:hover{
+            color:#4f71e8;
+        }
+
+/* Footerpart */
+
+#Feedback{
+        width: 100%;
+        height: 450px;
+        text-align: center;
+        background-color: #83751a;
+    }
+    .feed{
+        width: 50%;
+        margin:20px auto;
+        padding: 25px;
+        color: white;
+        font-size:30px;
+        text-align: center;
+    }
+    .feedbacks{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        overflow-x: auto;
+        height: 250px;
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+    .feedbacks>div{
+        width: 20%;
+        color: white;
+        margin: 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+
+    }
+    #review{
+        background-color:#ffce61;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    #review:hover{
+        cursor: pointer;
+        background-color: white;
+        border-color: tomato;
+
+    }
+    #Footer{
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        border:1px solid transparent;
+    }
+    #googleicon{
+
+        width: 15%;
+        margin:20px auto;
+        border: 1px solid transparent;
+    }
+    .footerflex{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .footerflex>div{
+        font-weight: bolder;
+        margin: 10px;
+        padding: 0px 20px;
+        cursor:pointer;
+    }
+    
+    .footerflex2{
+        display: flex;
+        margin: 0 20px;
+        justify-content: center;
+    }
+    .boxes{
+        text-align: center;
+        margin: 10px;
+        padding:10px;
+        width:50px;
+        height: 50px;
+        border-radius:50%;
+        background-color: #ffce61;
+    }
+
+     
+
+        
